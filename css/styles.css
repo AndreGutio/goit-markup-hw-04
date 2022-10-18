@@ -131,13 +131,20 @@ body {
   margin-left: auto;
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
-/*.header-contact-item {
-}*/
+.header-contact-link:hover .contact-icon {
+  fill: var(--primary-accent-color);
+}
+
+
+/* .header-contact-item {
+} */
 
 .header-contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -151,6 +158,10 @@ body {
   color: var(--primary-accent-color);
 }
 
+.contact-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
 /*M-A-I-N*/
 
 .hero {
@@ -234,7 +245,38 @@ body {
   width: 270px;
 }
 
+.possibility-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-bg-color);
+}
+
+.icon-antenna::before {
+background-image: url(../images/icons/antenna.svg);
+background-size: 70px 70px;
+}
+
+.icon-clock::before {
+background-image: url(../images/icons/clock.svg);
+background-size: 70px 70px;
+}
+
+.icon-diagram::before {
+background-image: url(../images/icons/diagram.svg);
+background-size: 70px 70px;
+}
+
+.icon-astronaut::before {
+background-image: url(../images/icons/astronaut.svg);
+background-size: 70px 70px;
+}
+
 .possibility-item-title {
+  padding-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -250,6 +292,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+/* .possibility-icon {
+} */
 
 .work {
   padding: 94px 0;
@@ -329,6 +374,28 @@ body {
   color: var(--primary-text-color);
 }
 
+.clients {
+    padding: 94px 0;
+}
+
+.clients-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: cacl(42/36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+
+}
+
+.clients-card {
+
+}
 /*F-O-O-T-E-R*/
 
 .footer {
