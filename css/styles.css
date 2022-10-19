@@ -173,6 +173,9 @@ body {
 
 .hero {
   background: var(--dark-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   url(/images/hero.jpg);
+  background-size: cover;
   padding: 200px 0;
   text-align: center;
 }
@@ -518,6 +521,9 @@ fill: var(--svg-color-primary);
   color: var(--primary-accent-color);
 }
 
+.social-footer {
+  align-items: baseline;
+}
 /*----PORTFOLIO.html----*/
 /*---M-A-I-N-portfolio*/
 
@@ -562,6 +568,9 @@ fill: var(--svg-color-primary);
 .cross-btn:focus {
   color: var(--primary-bg-color);
   background-color: var(--primary-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*.portfolio {
@@ -578,8 +587,11 @@ fill: var(--svg-color-primary);
   gap: 30px;
 }
 
-/*.portfolio-link {
-}*/
+/* .portfolio-link {
+  background: #FFFFFF;
+border: 1px solid #EEEEEE;
+} */
+
 
 .portfolio-bo {
   padding: 20px 24px;
