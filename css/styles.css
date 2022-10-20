@@ -177,14 +177,22 @@ body {
 /*M-A-I-N*/
 
 .hero {
-  background: var(--dark-bg-color);
+  background: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(./images/hero.jpg);
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/hero.jpg");
   background-size: cover;
   padding: 200px 0;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -293,7 +301,7 @@ body {
 }
 
 .possibility-item-title {
-  padding-top: 30px;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -347,7 +355,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 36px;
-  line-height: cacl(42/36);
+  line-height: inherit; 
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
@@ -394,7 +402,8 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* .social-item {
@@ -529,13 +538,20 @@ body {
 }
 
 .social-footer {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .social-footer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
 }
+
 .social-footer-list {
   display: flex;
   gap: 10px;
